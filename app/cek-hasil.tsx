@@ -76,9 +76,7 @@ export function CekHasil() {
                   </button>
                 </div>
                 <p id="nrp-pesan" className="pesan-form" aria-live="polite">
-                  {state.status === "invalid" && "NRP hanya berisi angka. Periksa lagi lalu cek ulang."}
-                  {state.status === "notfound" &&
-                    `NRP ${state.nrp} tidak ada di daftar pendaftar. Pastikan angkanya benar.`}
+                  {state.status === "invalid" && "NRP terdiri dari 10 angka. Periksa lagi lalu cek ulang."}
                 </p>
               </form>
             </section>
@@ -109,19 +107,61 @@ export function CekHasil() {
           <div className="pesan" key={ada ? state.nrp : "kosong"}>
             {state.status === "lolos" && (
               <>
-                <h2 id="hasil-judul">Selamat, {state.nama}!</h2>
+                <p className="pesan-nrp">
+                  Hasil untuk NRP <b>{state.nrp}</b>
+                </p>
+                <h2 id="hasil-judul">🎉 Selamat! Kamu lolos seleksi berkas Oprec Flexoo 2027 🎉</h2>
                 <p>
-                  Kamu lolos seleksi Open Recruitment Flexoo 2027. Info tahap berikutnya akan kami
-                  kirimkan lewat kontak yang kamu daftarkan.
+                  Halo calon pengurus Flexoo! Berkas kamu sudah kami review dan kamu berhak lanjut ke tahap
+                  wawancara. 🚀
+                </p>
+
+                <h3>📅 Jadwal wawancara</h3>
+                <ul>
+                  <li>Kamis, 12 November 2026 · 18.00–21.00 WIB</li>
+                  <li>Jumat, 13 November 2026 · 18.00–21.00 WIB</li>
+                  <li>
+                    Sabtu, 14 November 2026 · 13.00–18.00 WIB (khusus Academy Lead dan yang berhalangan Kamis
+                    atau Jumat)
+                  </li>
+                </ul>
+                <p>📍 Lokasi: CCWS IUP dan Plaza Supeno</p>
+
+                <h3>✅ Yang perlu disiapkan</h3>
+                <ul>
+                  <li>
+                    Cek hari dan jam wawancaramu di{" "}
+                    <a href="https://its.id/m/NewGenFlexoo2027">grup WhatsApp New Gen Flexoo 2027</a>.
+                  </li>
+                  <li>Datang 15 menit lebih awal, berpakaian rapi, dan tepat waktu.</li>
+                  <li>Siapkan jawaban tentang motivasi, Flexoo, dan posisi yang kamu pilih.</li>
+                  <li>Baca ulang CV, portofolio, dan esai yang kamu kirim.</li>
+                </ul>
+
+                <h3>⚠️ Berhalangan hadir?</h3>
+                <p>Hubungi PIC sebelum hari wawancara agar dijadwalkan ulang ke Sabtu (slot terbatas):</p>
+                <ul>
+                  <li>
+                    Ziyad: <a href="https://wa.me/6281275543340">081275543340</a>
+                  </li>
+                </ul>
+
+                <p className="penutup">
+                  Pengumuman akhir: 15 November 2026. Tetap semangat, kami tunggu kehadiranmu! 💛
                 </p>
               </>
             )}
             {state.status === "tidak" && (
               <>
-                <h2 id="hasil-judul">Tetap semangat, {state.nama}!</h2>
+                <p className="pesan-nrp">
+                  Hasil untuk NRP <b>{state.nrp}</b>. Kalau NRP-nya salah ketik, perbaiki di atas lalu cek ulang.
+                </p>
+                <h2 id="hasil-judul">Tetap semangat!</h2>
                 <p>
-                  Kamu belum lolos di Open Recruitment kali ini. Terima kasih sudah meluangkan waktu untuk
-                  mendaftar, dan semoga kita bertemu lagi di kesempatan berikutnya.
+                  Terima kasih sudah mendaftar dan mempercayakan waktumu pada Oprec Flexoo 2027. 🙏 Untuk kali
+                  ini kamu belum bisa lanjut ke tahap wawancara. Itu bukan akhir perjalananmu: Oprec Flexoo
+                  Academy 14–23 Desember 2027. Kami tunggu pendaftaranmu! Pantau info di Instagram{" "}
+                  <a href="https://www.instagram.com/flexoo.id/">@flexoo.id</a>. 💛
                 </p>
               </>
             )}

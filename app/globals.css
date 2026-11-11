@@ -484,16 +484,55 @@ body {
 .pesan h2 {
   margin: 0 0 0.6rem;
   font-weight: 900;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  line-height: 1.05;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  line-height: 1.1;
   color: var(--ink);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.18);
 }
 
-.pesan p {
+.pesan h3 {
+  margin: 1.75rem 0 0.5rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+
+.pesan p,
+.pesan ul {
   margin: 0;
   max-width: 60ch;
   font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.pesan p + p,
+.pesan ul + p {
+  margin-top: 0.75rem;
+}
+
+.pesan ul {
+  padding-left: 1.25rem;
+}
+
+.pesan li + li {
+  margin-top: 0.35rem;
+}
+
+.pesan a {
+  color: var(--blue);
+  font-weight: 700;
+  text-underline-offset: 0.2em;
+}
+
+.pesan .pesan-nrp {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #5a5a5a;
+}
+
+.pesan .penutup {
+  margin-top: 1.75rem;
+  font-weight: 700;
 }
 
 .pesan .pesan-kosong {
