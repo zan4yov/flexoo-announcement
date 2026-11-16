@@ -628,3 +628,18 @@ body {
     animation: none;
   }
 }
+
+.pesan .posisi {
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+.pesan .posisi span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.pesan a.pill {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}

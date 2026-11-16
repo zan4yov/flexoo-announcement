@@ -1,22 +1,18 @@
-nrp
-5053241031
-5025241007
-5025241160
-5025251129
-5025241023
-5025241185
-5053241044
-5025251118
-5053251023
-5053251020
-5025251195
-5053251040
-5053241039
-5025251100
-5025251050
-5053251021
-5025241036
-5025251021
-5025241181
-5025241163
-5025251243
+nrp,nama,divisi
+5025241007,Muhammad Ilyas Rusdi,Project Manager
+5025241160,Hartmann Kanisius Galla’ Massang,Project Manager
+5025241163,Maulana Ikhsan,Project Manager
+5025251243,Irsyad Akbar,UI/UX Designer
+5025251050,Muhammad Fajrul Hakam,UI/UX Designer
+5025251021,Yahdilil Haq Sarifuddin,Frontend Developer
+5025241023,Hamzah Ali Abdillah,Frontend Developer
+5025241036,Muhammad Quthbi Danish Abqori,Frontend Developer
+5053251023,Afrel Zharif Muflih,Frontend Developer
+5025251195,Dafa Dega Wijaya,Backend Developer
+5053241039,Handhika Putra Widyartono,Backend Developer
+5025251118,Anang Ardhiansyah,Backend Developer
+5025251129,Muhammad Brahmana Priambudi,Backend Developer
+5025241185,Muhammad Nawfal Alfanni D,Business Development
+5053251040,Muhammad Zaydan Anugrah Pratama,Business Development
+5053251020,Yuwand Arteta Hydri Wahyu Putra,Academy Lead
+5025251100,Yudith Hafiz Rabbani,Academy Lead
