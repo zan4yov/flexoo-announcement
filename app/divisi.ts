@@ -11,7 +11,7 @@ export type Penerimaan = {
 const PM = "https://chat.whatsapp.com/BsQdd15aGnaGjvqVZfXK1M?s=cl&p=a&iam=2";
 const UIUX = "https://chat.whatsapp.com/KtqN3HSbROb10ovqQI75XO?s=cl&p=a&iam=2";
 const FE = "https://chat.whatsapp.com/GMhb4nDan528BoslWrrzCB?s=cl&p=a&iam=2";
-const BE = "https://chat.whatsapp.com/JhgzOL7p72R4nars9XObTR?s=cl&p=a&iam=2";
+const BE = "https://chat.whatsapp.com/Fv2ATZlbuCREDKY8mBqaEa?s=cl&p=a&iam=2";
 const MANAGEMENT = "https://chat.whatsapp.com/L2DHiadetbILjYq4uZNp7f";
 
 function tim(posisi: string, link: string): Penerimaan {
